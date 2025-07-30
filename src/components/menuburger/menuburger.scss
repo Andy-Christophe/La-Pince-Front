@@ -1,0 +1,150 @@
+.profil-icon {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  position: relative;
+  top: -15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .profil-icon {
+    display: none;
+  }
+
+  .menuburger {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #3e528d;
+    transition: 0.5s;
+    z-index: 10000;
+
+    &.active {
+      right: 0;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: white;
+      font-size: 30px;
+      text-decoration: none;
+    }
+
+    ul {
+      padding: 50px 20px;
+      list-style: none;
+
+      li {
+        margin-bottom: 15px;
+        border-bottom: #ffffff 1px solid;
+        padding-bottom: 10px;
+
+        a {
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .burger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    padding: 1rem;
+    background-color: #3e528d;
+    border-radius: 10px;
+
+    span {
+      height: 3px;
+      width: 100%;
+      background-color: #ffffff;
+      display: block;
+    }
+  }
+
+  #openBtn {
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .profil-text {
+    display: none;
+  }
+
+  .profil-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.5rem;
+    color: #3e528d;
+  }
+
+  .menuburger {
+    text-decoration: none;
+    font-size: 0.8rem;
+
+    .close {
+      display: none;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+
+      li {
+        margin: 2rem;
+
+        .profil-link-text-icon {
+          &:hover {
+            background-color: unset;
+            padding: unset;
+            color: unset;
+            border-radius: unset;
+            
+          }
+
+          .profil-icon{
+            transition: 0.3s;
+            &:hover {
+              transform: scale(1.15);
+              
+            }
+          }
+        }
+
+        a {
+          text-decoration: none;
+          transition: 0.5s;
+          color: black;
+
+
+
+
+          &:hover {
+            background-color: #3e528d;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+          }
+
+
+
+        }
+      }
+    }
+  }
+}

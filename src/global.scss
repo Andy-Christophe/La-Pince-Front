@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'RocaRegular';
+    src: url('./assets/fonts/RocaRegular.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'RocaBold';
+    src: url('./assets/fonts/RocaBold.ttf') format('truetype');
+
+}
+
+@font-face {
+    font-family: 'RocaThin';
+    src: url('./assets/fonts/RocaThin.ttf') format('truetype');
+
+}
+
+p {
+    font-family: 'RocaThin', sans-serif;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+html {
+    font-family: 'RocaRegular', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+    background: linear-gradient(135deg, #ede5de 0%, #a7bcb7 100%);
+
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    body {
+        margin: 0;
+        margin-bottom: 0;
+    }
+
+    main {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+
+
+        .buttonbleu {
+            padding: 0.75rem 1.25rem;
+            border-radius: 10px;
+            border: none;
+            background-color: #3E528D;
+            color: white;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: #2C3A6B;
+                cursor: pointer;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+
+        }
+
+        .supressionbutton {
+            padding: 0.35rem 0.75rem;
+            font-size: 0.5rem;
+            border-radius: 10px;
+            border: none;
+            background-color: red;
+            color: white;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: rgb(102, 2, 2);
+                cursor: pointer;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+        }
+
+        .supressionoperation {
+            text-align: right;
+            margin-top: 2rem;
+
+        }
+    }
+
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
